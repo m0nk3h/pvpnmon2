@@ -1,0 +1,53 @@
+Version 2.0b
+	Added support for the new version of the ProtonVPN cli tool.
+
+Version 0.7
+	Added **Experimental** Kill-Switch to the Opt menu.
+		When activated in the Opt menu it will halt *all* network traffic on your machine on a VPN disconnection detection.
+		Reconnect by using the VPN menu only, typing sudo pvpn -c will not work, as you will have no internet connection .'
+		Do not close the GUI while kill-switch is activated, if you do, or the GUI crashes for some reason:
+			A backup of your iptables is made in your home directory, called 'iptables.backup'.
+			'sudo iptables -F' followed by 'sudo iptables-restore ~/iptables.backup' 
+			Reooting your machine will also remove the kill-switch.
+	kill.sh is now a required download.
+	iprestore.sh is now a required download.
+	ipsave.sh is now a required download.
+	Updated readme, and Help/FAQ Dialog.
+			
+Version 0.6a
+	Bugfixes
+	Added Opt. Menu.
+	Added Mini Gui option to only display minimal connection information.
+	Added Ping option, to enable/disable Google Ping feature.
+	Added Fast Poll option.  Improves disconnection detection from <1 second to < 1/4 of a second,
+		at the expense of higher CPU use & disk reads.
+	Added -top cli option.  Start with 'python3 pvpnmon -top &'  to keep monitor tool on top of other windows.
+	Updated the crawling dots to a scrolling text bar.
+	Updated readme, and Help/FAQ Dialog.
+	
+Version 0.5
+	Bugfixes.
+	Added check to see if protonvpn-cli is up to date on startup.
+	Added optional background logo.
+	Added Google Ping indicator.  google.com is pinged every minute, to indicate connection latency.
+	Updated readme, and Help/FAQ Dialog.
+
+Version 0.4
+	Bugfixes.
+	Changed handling of [Internet : Offline]  to reflect possible issues.
+	Updated Help / FAQ Dialog.
+	Removed sending --status to cli at startup to improve gui loading time.
+
+Version 0.3
+    Major re-write of the monitoring process.  The GUI is no longer laggy!
+    The monitor checks the VPN connection every second, but the server details and load are updated every minute,
+        or upon state change.
+    check.sh is now a required download.
+        
+Version 0.2
+    Added Connect - Fastest by country dialog
+    Added Help/ FAQ dialog
+    Updated About
+    
+Version 0.1
+    Initial release
