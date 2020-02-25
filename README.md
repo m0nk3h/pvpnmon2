@@ -16,13 +16,11 @@ Download 	1.	pvpnmon.py
 	and make sure they are in the same folder. 
 	**Optionally**, download logo.gif and place in same folder, for a background logo.
 
-Run 'sudo pvpn -c' to establish an initial connection.
-
 Run pvpnmon from terminal with 'python3 pvpnmon.py &'  -  **in the directory where you downloaded pvpnmon.py to**.
 
 **Alternatively**, run 'python3 pvpnmon.py -top &' to keep the monitor window above other windows.
 
-Terminal may ask for your SU password, as internally it runs 'sudo pvpn --status', and other commands.  It may take a few seconds for the GUI to launch, as it will query the ProtonVPN servers..
+Terminal may ask for your SU password, as internally it runs 'sudo protonvpn status', and other commands.  It may take a few seconds for the GUI to launch, as it will query the ProtonVPN servers..
 
 CTRL-C after running, to release terminal window.
 
