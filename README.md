@@ -5,6 +5,10 @@ Requirements:
 1. Linux (any, tested on openSUSE Tumbleweed)
 2. Python (tested on v3.7)
 3. ProtonVPN cli tool (https://protonvpn.com/support/linux-vpn-tool/)
+4. tkinter - If you get :File "pvpnmon.py", line 1, in <module>
+			    import tkinter as tk
+				ModuleNotFoundError: No module named 'tkinter'
+		run: sudo apt install python3-tk (or similar for your distro)
 
 Download, and setup ProtonVPN-cli, as per above link. 
 
